@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="motobecane" translatesAutoresizingMaskIntoConstraints="NO" id="0Cp-pA-3aD">
+                                <rect key="frame" x="0.0" y="240" width="600" height="360"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="677-fK-GmZ" userLabel="DescriptionView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="240"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2010 Motobecane Grand Sprint" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aDD-KP-tLI">
+                                        <rect key="frame" x="20" y="40" width="560" height="59"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jj5-Ar-2V6">
+                                        <rect key="frame" x="20" y="119" width="560" height="89"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                        </variation>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="focus" translatesAutoresizingMaskIntoConstraints="NO" id="YYS-P4-4hO">
+                                        <rect key="frame" x="180" y="56" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="132" id="MJH-nf-oM3"/>
+                                            <constraint firstAttribute="width" constant="150" id="peN-T3-Pwb"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="jj5-Ar-2V6" firstAttribute="top" secondItem="aDD-KP-tLI" secondAttribute="bottom" constant="20" id="DeO-lH-GZ0"/>
+                                    <constraint firstAttribute="bottom" secondItem="YYS-P4-4hO" secondAttribute="bottom" id="Fbd-ti-Kdz"/>
+                                    <constraint firstItem="jj5-Ar-2V6" firstAttribute="leading" secondItem="677-fK-GmZ" secondAttribute="leading" constant="20" id="HeN-Ts-wMK"/>
+                                    <constraint firstAttribute="trailing" secondItem="jj5-Ar-2V6" secondAttribute="trailing" constant="20" id="Pzn-5v-g12"/>
+                                    <constraint firstItem="aDD-KP-tLI" firstAttribute="leading" secondItem="677-fK-GmZ" secondAttribute="leading" constant="20" id="awF-Oh-qFR"/>
+                                    <constraint firstAttribute="trailing" secondItem="YYS-P4-4hO" secondAttribute="trailing" id="dKq-FQ-LTa"/>
+                                    <constraint firstAttribute="trailing" secondItem="aDD-KP-tLI" secondAttribute="trailing" constant="20" id="ga1-9F-yVF"/>
+                                    <constraint firstItem="aDD-KP-tLI" firstAttribute="top" secondItem="677-fK-GmZ" secondAttribute="top" constant="40" id="p4c-wB-jKu"/>
+                                </constraints>
+                                <variation key="heightClass=compact">
+                                    <mask key="subviews">
+                                        <exclude reference="YYS-P4-4hO"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <exclude reference="YYS-P4-4hO"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Cp-pA-3aD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AYJ-su-E5w"/>
+                            <constraint firstItem="0Cp-pA-3aD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JNT-Mz-HN5"/>
+                            <constraint firstAttribute="trailing" secondItem="677-fK-GmZ" secondAttribute="trailing" id="KM5-P8-4u1"/>
+                            <constraint firstAttribute="bottom" secondItem="0Cp-pA-3aD" secondAttribute="bottom" id="NMQ-U7-Srj"/>
+                            <constraint firstItem="677-fK-GmZ" firstAttribute="leading" secondItem="0Cp-pA-3aD" secondAttribute="trailing" id="Tak-qr-SyN">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="0Cp-pA-3aD" secondAttribute="trailing" id="bx0-54-r4O"/>
+                            <constraint firstAttribute="bottom" secondItem="677-fK-GmZ" secondAttribute="bottom" id="dDn-yV-Loj"/>
+                            <constraint firstItem="0Cp-pA-3aD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="eJt-St-A6x"/>
+                            <constraint firstItem="677-fK-GmZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lzw-9x-nS5"/>
+                            <constraint firstItem="0Cp-pA-3aD" firstAttribute="top" secondItem="677-fK-GmZ" secondAttribute="bottom" id="r8N-YO-DEP"/>
+                            <constraint firstItem="677-fK-GmZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="w0x-6m-hes"/>
+                            <constraint firstItem="677-fK-GmZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xll-So-Fn0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Tak-qr-SyN"/>
+                                <exclude reference="dDn-yV-Loj"/>
+                                <exclude reference="JNT-Mz-HN5"/>
+                                <exclude reference="eJt-St-A6x"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="Tak-qr-SyN"/>
+                                <include reference="dDn-yV-Loj"/>
+                                <exclude reference="w0x-6m-hes"/>
+                                <exclude reference="xll-So-Fn0"/>
+                                <include reference="JNT-Mz-HN5"/>
+                                <exclude reference="bx0-54-r4O"/>
+                                <include reference="eJt-St-A6x"/>
+                                <exclude reference="r8N-YO-DEP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="focus" width="300" height="265"/>
+        <image name="motobecane" width="300" height="178"/>
+    </resources>
+</document>
